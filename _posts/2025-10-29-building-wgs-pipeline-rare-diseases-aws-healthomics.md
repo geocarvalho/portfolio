@@ -6,7 +6,7 @@ categories: bioinformatics
 tags: [bioinformatics, wgs, nextflow, aws, rare-disease, pipeline]
 ---
 
-Alongside the [RNA-seq pipeline](/bioinformatics/2025/08/28/building-rnaseq-pipeline-rare-diseases-aws-healthomics.html) I built at the [UCLA Nelson Lab](https://nelsonlab.ucla.edu/), I also developed a whole genome sequencing (WGS) pipeline for germline short-read data: [nl-wgs_wf](https://github.com/uclanelsonlab/nl-wgs_wf). Like its RNA-seq counterpart, it's written in Nextflow (DSL2), runs on [AWS HealthOmics](https://aws.amazon.com/healthomics/), and is designed for rare disease diagnostics. This post covers the architecture, tool choices, and design decisions behind it.
+Alongside the [RNA-seq pipeline](/bioinformatics/2025/08/28/building-rnaseq-pipeline-rare-diseases-aws-healthomics.html) I built at the [UCLA Nelson Lab](https://uclanelsonlab.github.io/), I also developed a whole genome sequencing (WGS) pipeline for germline short-read data: [nl-wgs_wf](https://github.com/uclanelsonlab/nl-wgs_wf). Like its RNA-seq counterpart, it's written in Nextflow (DSL2), runs on [AWS HealthOmics](https://aws.amazon.com/healthomics/), and is designed for rare disease diagnostics. This post covers the architecture, tool choices, and design decisions behind it.
 
 ## Pipeline Architecture
 

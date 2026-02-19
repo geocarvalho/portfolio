@@ -6,7 +6,7 @@ categories: bioinformatics
 tags: [bioinformatics, rnaseq, nextflow, aws, rare-disease, pipeline]
 ---
 
-Over the past couple of years at the [UCLA Nelson Lab](https://nelsonlab.ucla.edu/), I built and maintained a comprehensive RNA-seq analysis pipeline designed specifically for rare disease diagnostics. The pipeline, [nl-rna-seq_wf](https://github.com/uclanelsonlab/nl-rna-seq_wf), is written in Nextflow (DSL2) and runs on [AWS HealthOmics](https://aws.amazon.com/healthomics/) — Amazon's managed service for genomics workflows. In this post I want to walk through the architecture, explain why each tool was chosen, and share some lessons learned from running production genomics in the cloud.
+Over the past couple of years at the [UCLA Nelson Lab](https://uclanelsonlab.github.io/), I built and maintained a comprehensive RNA-seq analysis pipeline designed specifically for rare disease diagnostics. The pipeline, [nl-rna-seq_wf](https://github.com/uclanelsonlab/nl-rna-seq_wf), is written in Nextflow (DSL2) and runs on [AWS HealthOmics](https://aws.amazon.com/healthomics/) — Amazon's managed service for genomics workflows. In this post I want to walk through the architecture, explain why each tool was chosen, and share some lessons learned from running production genomics in the cloud.
 
 ## Why AWS HealthOmics?
 
