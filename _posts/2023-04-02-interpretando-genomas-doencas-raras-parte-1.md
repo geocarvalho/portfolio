@@ -4,7 +4,7 @@ title: "Interpretando genomas para doenças raras — anotações (parte 1)"
 date: 2023-04-02
 categories: bioinformatics
 tags: [bioinformatics, genomics, rare-disease, sequencing, ngs]
-image_dir: /portfolio/assets/images/posts/sequenciamento-doencas-raras
+image_dir: /assets/images/posts/sequenciamento-doencas-raras
 ---
 
 Anotações da primeira aula do curso "Interpreting Genomes for Rare Disease" ministrada por Daniel MacArthur, PhD e adição de outros materiais, mais detalhes nas referências.
