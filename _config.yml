@@ -11,7 +11,7 @@ header_pages:
   - projects.md
   - experience.md
   - blog.md
-  - contact.md
+  - contact.html
 
 # Build settings
 theme: minima
