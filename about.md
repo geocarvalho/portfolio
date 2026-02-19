@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-## About Me
-
-I’m George Carvalho, a Healthcare Data Scientist and Bioinformatician specializing in clinical genomics, large-scale sequencing analysis, and workflow automation. I build scalable, reproducible pipelines and data systems that transform complex genomic data into actionable insights for research and patient care.
+I'm George Carvalho, a Healthcare Data Scientist and Bioinformatician specializing in clinical genomics, large-scale sequencing analysis, and workflow automation. I build scalable, reproducible pipelines and data systems that transform complex genomic data into actionable insights for research and patient care.
 
 Currently at UCLA Health, I analyze whole genome and RNA sequencing data for rare disease patients, develop cloud-based pipelines, and generate clinical genomics reports that support diagnostic decision-making. My work focuses on improving variant detection, structural variation analysis, and the efficiency and reliability of genomic workflows.
 
