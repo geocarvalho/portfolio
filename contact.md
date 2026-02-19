@@ -6,6 +6,59 @@ permalink: /contact/
 
 I'd love to hear from you. Feel free to reach out through any of the channels below.
 
-- **Email:** [geocarvalho91@gmail.com](mailto:geocarvalho91@gmail.com)
 - **GitHub:** [github.com/geocarvalho](https://github.com/geocarvalho)
 - **LinkedIn:** [linkedin.com/in/george-carvalho](https://linkedin.com/in/george-carvalho)
+
+---
+
+### Send me a message
+
+<form id="contact-form" class="contact-form">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required placeholder="Your name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required placeholder="your@email.com">
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+  </div>
+  <input type="hidden" name="time" id="time">
+  <button type="submit" class="form-submit">Send Message</button>
+</form>
+
+<div id="form-status" class="form-status" style="display: none;"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init({ publicKey: "6uEvy-IHX3H3uxsOt" });
+
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var btn = this.querySelector("button[type=submit]");
+    var status = document.getElementById("form-status");
+    btn.disabled = true;
+    btn.textContent = "Sending...";
+    document.getElementById("time").value = new Date().toLocaleString();
+
+    emailjs.sendForm("service_qpddzgz", "template_mshdu0g", this)
+      .then(function () {
+        status.style.display = "block";
+        status.className = "form-status success";
+        status.textContent = "Message sent successfully! I'll get back to you soon.";
+        document.getElementById("contact-form").reset();
+        btn.disabled = false;
+        btn.textContent = "Send Message";
+      })
+      .catch(function () {
+        status.style.display = "block";
+        status.className = "form-status error";
+        status.textContent = "Something went wrong. Please try again or reach out via LinkedIn.";
+        btn.disabled = false;
+        btn.textContent = "Send Message";
+      });
+  });
+</script>
