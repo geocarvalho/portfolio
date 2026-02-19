@@ -33,27 +33,19 @@ I thrive in collaborative environments where science, engineering, and medicine 
 
 ### Selected Publications
 
-Most cited articles — see the full list on [Google Scholar](https://scholar.google.com/citations?user=Q0P0DHsAAAAJ&hl=en).
+See the full list on [Google Scholar](https://scholar.google.com/citations?user=Q0P0DHsAAAAJ&hl=en).
 
-- **The genetics of hereditary cancer risk syndromes in Brazil: a comprehensive analysis of 1682 patients**
+- **[Joint, multifaceted genomic analysis enables diagnosis of diverse, ultra-rare monogenic presentations](https://doi.org/10.1038/s41467-025-62267-w)**
+  SN Kobren, MA Moldovan, R Reimers, D Traviglia, X Li, D Barnum, A Veit, et al.
+  *Nature Communications*, 2025
+
+- **[HJV mutations causing hemochromatosis: variable phenotypic expression in a pair of twins](https://doi.org/10.3324/haematol.2023.284134)**
+  S De Oliveira, T Ganz, E Nemeth, G Carvalho Neto, EA Marcus, DN Srole, et al.
+  *Haematologica*, 2024
+
+- **[The genetics of hereditary cancer risk syndromes in Brazil: a comprehensive analysis of 1682 patients](https://doi.org/10.1038/s41431-022-01089-2)**
   JM de Oliveira, NB Zurro, AVC Coelho, MP Caraciolo, RB de Alexandre, et al.
   *European Journal of Human Genetics*, 2022
-
-- **Impact of genome build on RNA-seq interpretation and diagnostics**
-  RA Ungar, PC Goddard, TD Jensen, F Degalez, KS Smith, CA Jin, et al.
-  *The American Journal of Human Genetics*, 2024
-
-- **Loss-of-function in RBBP5 results in a syndromic neurodevelopmental disorder associated with microcephaly**
-  Y Huang, KL Jay, AYW Huang, J Wan, SV Jangam, O Chorin, et al.
-  *Genetics in Medicine*, 2024
-
-- **Transcriptome-wide outlier approach identifies individuals with minor spliceopathies**
-  TM Arriaga, R Mendez, RA Ungar, DE Bonner, DR Matalon, G Lemire, et al.
-  *The American Journal of Human Genetics*, 2025
-
-- **Advancing equity in rare disease research: insights from the Undiagnosed Disease Network**
-  NA Borja, RJ Tinker, SA Bivona, CA Smith, TK Locker, S Fernandes, et al.
-  *American Journal of Medical Genetics Part A*, 2025
 
 ---
 
