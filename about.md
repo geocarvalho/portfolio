@@ -35,7 +35,7 @@ I thrive in collaborative environments where science, engineering, and medicine 
 
 See the full list on [Google Scholar](https://scholar.google.com/citations?user=Q0P0DHsAAAAJ&hl=en).
 
-- **[Joint, multifaceted genomic analysis enables diagnosis of diverse, ultra-rare monogenic presentations](https://doi.org/10.1038/s41467-025-62267-w)**
+- **[Joint, multifaceted genomic analysis enables diagnosis of diverse, ultra-rare monogenic presentations](https://www.nature.com/articles/s41467-025-61712-2)**
   SN Kobren, MA Moldovan, R Reimers, D Traviglia, X Li, D Barnum, A Veit, et al.
   *Nature Communications*, 2025
 
@@ -43,7 +43,7 @@ See the full list on [Google Scholar](https://scholar.google.com/citations?user=
   S De Oliveira, T Ganz, E Nemeth, G Carvalho Neto, EA Marcus, DN Srole, et al.
   *Haematologica*, 2024
 
-- **[The genetics of hereditary cancer risk syndromes in Brazil: a comprehensive analysis of 1682 patients](https://doi.org/10.1038/s41431-022-01089-2)**
+- **[The genetics of hereditary cancer risk syndromes in Brazil: a comprehensive analysis of 1682 patients](https://www.nature.com/articles/s41431-022-01098-7)**
   JM de Oliveira, NB Zurro, AVC Coelho, MP Caraciolo, RB de Alexandre, et al.
   *European Journal of Human Genetics*, 2022
 
