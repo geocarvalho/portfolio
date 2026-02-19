@@ -1,0 +1,17 @@
+- name: "Project One"
+  description: "A brief description of your first project and what problem it solves."
+  tech: "Python, Flask, PostgreSQL"
+  url: "https://example.com"
+  github: "https://github.com/geocarvalho/project-one"
+
+- name: "Project Two"
+  description: "A brief description of your second project and its key features."
+  tech: "JavaScript, React, Node.js"
+  url: "https://example.com"
+  github: "https://github.com/geocarvalho/project-two"
+
+- name: "Project Three"
+  description: "A brief description of your third project and the impact it had."
+  tech: "Python, Django, Docker"
+  url: ""
+  github: "https://github.com/geocarvalho/project-three"

@@ -1,0 +1,19 @@
+- role: "Genomics Bioinformatician"
+  company: "UCLA Health"
+  period: "2023 - Present"
+  description: "Design and implement scalable bioinformatics pipelines for whole genome and RNA sequencing analysis in rare disease diagnostics. Analyze complex genomic datasets including SNVs, CNVs, structural variants, mitochondrial variants, and family-based inheritance patterns. Develop cloud-based workflows and reporting solutions that support clinical decision-making. Collaborate with clinicians, researchers, and external partners to support translational genomics projects and improve diagnostic efficiency."
+
+- role: "Bioinformatician"
+  company: "G42 Healthcare"
+  period: "2021 - 2023"
+  description: "Developed analytical workflows and computational tools for large-scale genomics initiatives. Collaborated with multidisciplinary teams across software engineering, clinical operations, and research to support national genomics programs. Evaluated and implemented new tools and methodologies, generated technical reports, and contributed to research and product development efforts."
+
+- role: "Clinical Bioinformatician"
+  company: "Hospital Israelita Albert Einstein"
+  period: "2017 - 2021"
+  description: "Developed and maintained clinical bioinformatics pipelines and internal databases supporting diagnostic genomics services. Validated pipeline updates, ensured compliance with quality standards, and communicated results to interpretation teams. Delivered training workshops and lectures in clinical bioinformatics and supported workflow improvements for routine genomic analyses."
+
+- role: "Bioinformatics Intern & Research Scholar"
+  company: "Laboratório de Imunopatologia Keizo Asami (LIKA)"
+  period: "2014 - 2016"
+  description: "Supported research projects focused on genetic variation and disease association, including CFTR variant analysis and genotype–phenotype correlations. Developed in silico prediction workflows and contributed to scientific presentations and research outputs."
