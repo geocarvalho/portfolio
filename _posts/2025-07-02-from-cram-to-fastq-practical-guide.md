@@ -17,16 +17,65 @@ In this post, I'll walk you through the steps to convert a CRAM file into high-q
 - Access to the corresponding FASTA reference file (critical for decompression).
 - A CRAM file aligned to hg38 (no-alt or UCSC version depending on the lab standard).
 
-## Step 1: Check Reference Compatibility
+## Step 1: Identify the Reference Genome
 
-Before working with a CRAM, make sure your reference genome matches the one used for compression. This is critical, or decompression will fail or give incorrect results.
+Before working with a CRAM, you need to know exactly which reference genome was used for alignment. This is critical — using the wrong reference will cause decompression to fail or produce incorrect results.
+
+### Option A: Using ref-solver (recommended)
+
+[ref-solver](https://github.com/fulcrumgenomics/ref-solver) is a tool by Fulcrum Genomics that identifies the exact human reference genome used to align a BAM/SAM/CRAM file. It matches the sequence dictionary against a catalog of 15+ known human reference genomes using MD5 checksums, detecting naming conventions (`chr1` vs `1`), contig sets (with/without ALT contigs), and mitochondrial sequence differences.
+
+Install via cargo or conda:
+
+```bash
+cargo install ref-solver
+# or
+conda install -c bioconda ref-solver
+```
+
+Then identify the reference:
+
+```bash
+ref-solver identify sample.sorted.noalt.hg38.cram
+```
+
+Example output:
+
+```
+#1 hg38 (UCSC) (EXACT)
+   ID: hg38_ucsc
+   Assembly: GRCh38
+   Source: UCSC
+   Match Type: Exact
+   Score: 100.0%
+```
+
+You can also pipe from samtools or get JSON output for scripting:
+
+```bash
+samtools view -H sample.sorted.noalt.hg38.cram | ref-solver identify -
+
+ref-solver identify sample.sorted.noalt.hg38.cram --format json
+```
+
+If you have a candidate reference FASTA and want to compare directly:
+
+```bash
+ref-solver score sample.sorted.noalt.hg38.cram reference.fa.fai
+```
+
+This is especially useful when you receive CRAM files from external sources (collaborators, sequencing vendors, public repositories) where the reference might be labeled generically as "GRCh38" but could be any of the many variations (UCSC, NCBI, Broad, DRAGEN, etc.). You can also explore the web UI at [whatsmygenome.acgt.bio](https://whatsmygenome.acgt.bio/).
+
+### Option B: Using samtools samples
+
+A simpler check using samtools to verify if a specific reference file matches your CRAM:
 
 ```bash
 docker run -v $PWD:$PWD quay.io/biocontainers/samtools:1.22--h96c455f_0 samtools samples \
   -h -f $PWD/hg38.fa $PWD/sample.sorted.noalt.hg38.cram
 ```
 
-Pro Tip: If you see a `.` in the last column of the output, your reference does not match.
+If you see a `.` in the last column of the output, your reference does not match.
 
 ## Step 2: Validate Your CRAM
 
@@ -93,8 +142,8 @@ After these steps, you will have:
 - Repairing reads is important if your pipeline expects synchronized pairs (e.g., for STAR, BWA, etc).
 - If Fastp removes too many reads, inspect the quality thresholds or adapter settings.
 - If `samtools fastq` fails, double-check that the BAM is name-sorted.
-- For example, in one case, a company used `hg38_no_alt.fasta` that was not available, and I could not find it anywhere on the internet. It worked just fine with the UCSC `hg38.fasta`.
-- Try to use the exact reference genome used during alignment, but in case you have a derived reference, one possible solution is to use the base reference used to create the derived reference.
+- For example, in one case, a company used `hg38_no_alt.fasta` that was not available, and I could not find it anywhere on the internet. It worked just fine with the UCSC `hg38.fasta`. In situations like this, `ref-solver identify` can help you narrow down which reference genome variant was actually used.
+- Try to use the exact reference genome used during alignment, but in case you have a derived reference, one possible solution is to use the base reference used to create the derived reference. Use `ref-solver score` to compare your candidate reference against the CRAM header and confirm compatibility.
 
 ## Conclusion
 
