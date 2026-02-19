@@ -20,3 +20,12 @@
   </div>
 
 </footer>
+
+<script>
+  document.querySelectorAll('a[href^="http"]').forEach(function (link) {
+    if (!link.href.includes(location.hostname)) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    }
+  });
+</script>
