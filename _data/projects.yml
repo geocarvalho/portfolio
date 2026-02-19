@@ -4,3 +4,10 @@
   url: ""
   github: "https://github.com/uclanelsonlab/nl-rna-seq_wf"
   blog_post: "/bioinformatics/2025/08/28/building-rnaseq-pipeline-rare-diseases-aws-healthomics.html"
+
+- name: "WGS Pipeline for Rare Diseases"
+  description: "A Nextflow-based whole genome sequencing pipeline for germline short-read data, built for the UCLA Nelson Lab and designed to run on AWS HealthOmics. Supports FASTQ, BAM, and CRAM inputs with flexible subworkflows. Includes alignment (BWA-MEM2), duplicate marking (Picard), SNV/indel calling (DeepVariant), structural variant detection (Manta), copy number analysis (CNVpytor), repeat expansion detection (ExpansionHunter + ExpansionHunterDenovo), haplotype phasing (HapCUT2), runs of homozygosity (AutoMap), and comprehensive QC (Fastp, Qualimap, Picard metrics, MultiQC). All tools containerized with Docker and orchestrated through AWS ECR."
+  tech: "Nextflow, Docker, AWS HealthOmics, BWA-MEM2, DeepVariant, Manta, HapCUT2, CNVpytor"
+  url: ""
+  github: "https://github.com/uclanelsonlab/nl-wgs_wf"
+  blog_post: "/bioinformatics/2025/10/29/building-wgs-pipeline-rare-diseases-aws-healthomics.html"
