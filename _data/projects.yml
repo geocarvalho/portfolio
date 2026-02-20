@@ -17,7 +17,7 @@
   tech: "Python, edge-tts, Microsoft Edge TTS, CLI"
   url: ""
   github: "https://github.com/geocarvalho/simple-txt-to-speech"
-  blog_post: "/tools/2026/02/19/simple-txt-to-speech-convert-text-to-audio.html"
+  blog_post: "/tools/2026/01/21/simple-txt-to-speech-convert-text-to-audio.html"
 
 - name: "Single-Cell RNA-seq Pipeline"
   description: "A Nextflow pipeline for processing 10x Genomics single-cell/single-nucleus RNA-seq data, built for the UCLA Nelson Lab and designed to run on AWS HealthOmics. Wraps Cell Ranger for gene expression quantification and cell calling, with FastP for QC, automatic BAM-to-CRAM conversion for 40-60% storage savings on S3, and MultiQC for aggregated reporting. Supports configurable chemistry detection, adjustable expected cell counts, and optional alignment file generation — all containerized with Docker via AWS ECR."

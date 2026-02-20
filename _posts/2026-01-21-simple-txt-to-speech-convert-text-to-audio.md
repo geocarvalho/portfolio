@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simple Text-to-Speech: Converting Text Files to Audio with Python"
-date: 2026-02-19
+date: 2026-01-21
 categories: tools
 tags: [python, text-to-speech, tts, cli, edge-tts, accessibility]
 ---
